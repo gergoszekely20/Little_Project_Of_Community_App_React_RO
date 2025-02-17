@@ -1,0 +1,140 @@
+.solutions-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.solutions-popup .popup-content {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  width: 500px;
+  text-align: center;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.solutions-popup .popup-content h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.solutions-popup .popup-content p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.solutions-popup .popup-content .scroll-panel {
+  height: 500px;
+  overflow-y: auto;
+  margin-bottom: 10px;
+}
+
+.solutions-popup .popup-content .solutions-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.solutions-popup .popup-content .solution-item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #f4f4f4;  /* Light gray background */
+  padding: 15px;
+  border-radius: 8px;  /* Optional: for rounded corners */
+}
+
+.solutions-popup .popup-content textarea {
+  padding: 12px;
+  font-size: 16px;
+  width: 100%;
+  height: 85px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  resize: vertical;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+.solutions-popup .popup-content .save-button {
+  padding: 6px 12px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.solutions-popup .popup-content .save-button:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+.solutions-popup .popup-content .save-button:active {
+  background-color: #388e3c;
+  transform: scale(0.98);
+}
+
+.new-solution-textarea {
+  height: 75px;
+}
+
+.marker-details-button {
+  padding: 12px 20px;
+  background-color: #133790;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  display: block;
+  margin-top: 10px;
+}
+
+.marker-details-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.marker-details-button:focus {
+  outline: none;
+}
+
+.marker-details-button:active {
+  background-color: #004085;
+  transform: scale(0.98);
+}
+
+.rating-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.star {
+  font-size: 24px;
+  color: #ccc;
+  cursor: pointer;
+}
+
+.star.filled {
+  color: gold;
+}

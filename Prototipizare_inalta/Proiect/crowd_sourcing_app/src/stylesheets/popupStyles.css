@@ -1,0 +1,28 @@
+
+.marker-details-button {
+  padding: 12px 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  display: block; 
+  margin-top: 10px;
+}
+
+.marker-details-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05); 
+}
+
+.marker-details-button:focus {
+  outline: none; 
+}
+
+.marker-details-button:active {
+  background-color: #004085;
+  transform: scale(0.98);
+}

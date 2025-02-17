@@ -1,0 +1,106 @@
+.filtering-popup-overlay-custom {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+  animation: fadeInCustom 0.3s ease-out;
+}
+
+.filtering-popup-container-custom {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  width: 350px;
+  max-width: 90%;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  animation: slideUpCustom 0.3s ease-out;
+  overflow: hidden;
+}
+
+.filtering-popup-container-custom h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.filter-section-custom {
+  margin-bottom: 20px;
+}
+
+.filter-section-custom label {
+  font-size: 16px;
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.filter-section-custom select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  color: #333;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.filter-section-custom select:focus {
+  border-color: #007bff;
+  background-color: #fff;
+}
+
+.popup-buttons-custom {
+  display: flex;
+  justify-content: center;
+}
+
+.button-custom {
+  padding: 12px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.button-custom:hover {
+  background-color: #0056b3;
+}
+
+.button-custom:focus {
+  outline: none;
+}
+
+@keyframes fadeInCustom {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUpCustom {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
